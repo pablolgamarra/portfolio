@@ -1,0 +1,50 @@
+[
+	{
+		"id": 1,
+		"title": "Market Monitor Form",
+		"description": "A dynamic form built using React with TypeScript, integrated with SPFx. This application gathers customer purchase information based on data uploaded by their respective sales representatives. It is embedded in SharePoint and is currently in production.",
+		"technologies": ["React", "TypeScript", "SPFx", "SharePoint"],
+		"url": "",
+		"image": "",
+		"repo": "",
+		"date": "2023-08",
+		"status": "in production",
+		"category": "web"
+	},
+	{
+		"id": 2,
+		"title": "Rodate",
+		"description": "A PowerApps application in development for managing vehicle reservations within a company. Users can reserve vehicles for specific dates, and managers or administrators approve the requests. Keys are handed over and marked as received, and once the vehicle is returned, the reservation is closed.",
+		"technologies": ["PowerApps"],
+		"url": "",
+		"image": "",
+		"repo": "",
+		"date": "2024-10",
+		"status": "in development",
+		"category": "app"
+	},
+	{
+		"id": 3,
+		"title": "Node Bot For WhatsApp",
+		"description": "A bot currently in development for WhatsApp that responds based on commands. The goal is to provide personalized responses, create WhatsApp stickers, generate audio files, and add other tools during its development.",
+		"technologies": ["Node.js", "WhatsApp API"],
+		"url": "",
+		"image": "",
+		"repo": "",
+		"date": "2024-10",
+		"status": "in development",
+		"category": "app"
+	},
+	{
+		"id": 4,
+		"title": "Python-Subnetting-Helper",
+		"description": "A script that helps with IPv4 subnetting. Users input a subnet and the desired number of networks, and it generates the subnet mask in binary, decimal, and CIDR notation.",
+		"technologies": ["Python"],
+		"url": "",
+		"image": "",
+		"repo": "",
+		"date": "2024-09",
+		"status": "in development",
+		"category": "script"
+	}
+]

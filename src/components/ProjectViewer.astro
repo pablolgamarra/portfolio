@@ -1,0 +1,67 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from './ProjectCard.astro';
+import type { Project } from '../types';
+
+interface Props {
+	projects: Project[];
+}
+
+function changeView(view) {
+	const container = document.getElementById('project-container');
+	container.className = ''; // Clear previous classes
+	if (view === 'grid') {
+		container.classList.add(
+			'grid',
+			'grid-cols-1',
+			'sm:grid-cols-2',
+			'lg:grid-cols-3',
+			'gap-6',
+		);
+	} else if (view === 'list') {
+		container.classList.add('flex', 'flex-col', 'space-y-6');
+	} else if (view === 'table') {
+		container.classList.add('table', 'w-full');
+	}
+}
+
+const { projects } = Astro.props;
+---
+
+<section
+	id='projects'
+	class='py-20 bg-gray-100'
+>
+	<div class='max-w-7xl mx-auto px-4'>
+		<h2 class='text-3xl font-bold text-center mb-6'>Mis Proyectos</h2>
+
+		<!-- Controles para cambiar la vista -->
+		<div class='flex justify-center space-x-4 mb-8'>
+			<button
+				onclick="changeView('grid')"
+				class='px-4 py-2 bg-blue-500 text-white rounded'
+				>Galería</button
+			>
+			<button
+				onclick="changeView('list')"
+				class='px-4 py-2 bg-green-500 text-white rounded'
+				>Lista</button
+			>
+			<button
+				onclick="changeView('table')"
+				class='px-4 py-2 bg-teal-500 text-white rounded'
+				>Tabla</button
+			>
+		</div>
+
+		<!-- Contenedor de Proyectos -->
+		<div
+			id='project-container'
+			class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'
+		>
+			<!-- Proyecto en tarjeta (card) -->
+			{projects.map((project) => <ProjectCard project={project} />)}
+		</div>
+	</div>
+</section>
