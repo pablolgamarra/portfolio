@@ -20,6 +20,7 @@ export const info = {
 				'- Administración de infraestructura de red (Fortinet, Cisco, UniFi).',
 				'- Gestión de Windows Active Directory y servicios corporativos de Office 365.',
 				'- Soporte técnico a usuarios de ERP SAP R3.',
+                '- Instalación y Configuración de servicio de monitoreo de Zabbix',
 			],
 		},
 		{
@@ -77,10 +78,10 @@ export const info = {
 
 	projects: [
 		{
-			title: 'Gestor de Aplicaciones Empresariales',
+			title: 'Whatsapp Alert Bot',
 			isFeatured: true,
-			thumbnail: '/assets/images/proyecto1.png',
-			githubUrl: 'https://github.com/tu-repo',
+			thumbnail: '/assets/images/proyecto1.webp',
+            githubUrl: 'https://github.com/pablolgamarra/whatsapp-alert-bot',
 			liveUrl: 'https://live-url-del-proyecto.com',
 		},
 		{
