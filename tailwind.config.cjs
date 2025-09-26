@@ -5,11 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#111111",
+        dark: "#1B2021",
         light: "#FFFFFF",
         blue: "#33d2ff",
         gray: "#C4C4C4",
         "dark-gray": "#1A1A1A",
+        white: "#EAEAEA",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

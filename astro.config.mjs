@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-portfolio-uzair.vercel.app",
+  site: "https://pablolgamarra.vercel.app",
   integrations: [
     tailwind(),
     sitemap({
@@ -16,4 +16,9 @@ export default defineConfig({
     }),
     robotsTxt(),
   ],
+  i18n:{
+    locales:["es","en"],
+    defaultLocale: "es",
+    prefixDefaultLocale: false
+  }
 });
