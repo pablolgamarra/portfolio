@@ -1,6 +1,8 @@
 ---
-
 name: "Market Monitor Form"
+description: "WebPart desarrollado con SPFx para el monitoreo de datos de mercado y seguimiento de ventas por parte del equipo de marketing."
+---
+
 technologies:
 
 * SPFx
@@ -8,9 +10,6 @@ technologies:
 * TypeScript
 * SharePoint Online
 * Microsoft 365
-  description: "WebPart desarrollado con SPFx para el monitoreo de datos de mercado y seguimiento de ventas por parte del equipo de marketing."
-
----
 
 # Market Monitor Form
 

@@ -1,16 +1,13 @@
 ---
-
 name: "Implementación de Fortinet en sucursales"
+description: "Despliegue de firewalls Fortinet en sucursales para centralización de seguridad y conectividad corporativa."
+---
 technologies:
-
 * FortiGate
 * Fortinet Security Fabric
 * VPN
 * SD-WAN
 * Networking
-  description: "Despliegue de firewalls Fortinet en sucursales para centralización de seguridad y conectividad corporativa."
-
----
 
 # Implementación de Fortinet en sucursales
 

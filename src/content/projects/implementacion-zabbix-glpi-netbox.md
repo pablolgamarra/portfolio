@@ -1,6 +1,7 @@
 ---
-
 name: "Implementación de Zabbix, NetBox y GLPI"
+description: "Implementación de plataforma integrada de monitoreo, inventario y gestión de activos IT para infraestructura corporativa."
+---
 technologies:
 
 * Zabbix
@@ -8,9 +9,6 @@ technologies:
 * GLPI
 * Linux
 * Networking
-  description: "Implementación de plataforma integrada de monitoreo, inventario y gestión de activos IT para infraestructura corporativa."
-
----
 
 # Implementación de Zabbix, NetBox y GLPI
 

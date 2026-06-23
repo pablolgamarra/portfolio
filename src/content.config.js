@@ -3,13 +3,13 @@ import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
 const experiences = defineCollection({
-	loader: glob({ pattern: '**/*.md', base: './content/experience' }),
+	loader: glob({ base: './src/content/experiences', pattern: '**/*.md' }),
 	schema: z.object({
 		companyName: z.string(),
 		companyLocation: z.string(),
 		companyDescription: z.string(),
 		startDate: z.coerce.date(),
-		endDate: z.coerce.date().nullable(),
+		endDate: z.coerce.date().optional(),
 		jobPosition: z.string(),
 	}),
 });

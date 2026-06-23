@@ -1,17 +1,13 @@
 ---
-
 name: "Migración Google Workspace a Microsoft 365"
-technologies:
-
-* Google Workspace
+description: "Proyecto de migración de servicios colaborativos y correo empresarial desde Google Workspace hacia Microsoft 365."
+---
+technologies: [Google Workspace
 * Microsoft 365
 * Microsoft Entra ID
 * Exchange Online
 * DNS / MX Records
 * Migración de correo
-  description: "Proyecto de migración de servicios colaborativos y correo empresarial desde Google Workspace hacia Microsoft 365."
-
----
 
 # Migración Google Workspace a Microsoft 365
 

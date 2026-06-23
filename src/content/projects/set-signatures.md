@@ -1,16 +1,13 @@
 ---
-
 name: "Set-Signatures"
+description: "Herramienta de automatización desarrollada en PowerShell para la gestión centralizada y despliegue masivo de firmas corporativas en entornos Microsoft 365."
+---
 technologies:
 
 * PowerShell
 * Microsoft 365
 * Exchange Online
 * Active Directory
-  description: "Herramienta de automatización desarrollada en PowerShell para la gestión centralizada y despliegue masivo de firmas corporativas en entornos Microsoft 365."
-
----
-
 # Set-Signatures
 
 Solución de automatización desarrollada en PowerShell para administrar e implementar firmas de correo electrónico de forma centralizada en organizaciones que utilizan Microsoft 365. El proyecto permite generar y asignar firmas corporativas estandarizadas a usuarios específicos, grupos de usuarios o a toda la organización.

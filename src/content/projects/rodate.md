@@ -1,16 +1,13 @@
 ---
-
 name: "Rodate"
+description: "Aplicación interna para la gestión y reserva de vehículos corporativos desarrollada en Power Apps."
+---
 technologies:
 
 * Power Apps
 * Microsoft Dataverse
 * Power Automate
 * Microsoft 365
-  description: "Aplicación interna para la gestión y reserva de vehículos corporativos desarrollada en Power Apps."
-
----
-
 # Rodate
 
 Aplicación interna desarrollada para la gestión y reserva de vehículos corporativos dentro de la organización. El sistema centraliza la disponibilidad de la flota, controla las solicitudes de uso y mejora la trazabilidad de los vehículos asignados a empleados.

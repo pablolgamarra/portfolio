@@ -1,15 +1,12 @@
 ---
-
 name: "Kurundu - Sitio Web Catalogo"
+description: "Sitio web tipo catálogo para una empresa de productos artesanales, con gestión de contenido mediante CMS y despliegue serverless."
+---
 technologies:
 
 * Astro
 * Sanity CMS
 * Vercel
-  description: "Sitio web tipo catálogo para una empresa de productos artesanales, con gestión de contenido mediante CMS y despliegue serverless."
-
----
-
 # Kurundu - Sitio Web Catálogo
 
 Plataforma web desarrollada para una empresa del rubro de productos artesanales, orientada a la exhibición de catálogo de productos y fortalecimiento de la presencia digital de la marca.

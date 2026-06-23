@@ -17,6 +17,8 @@ const { id, data } = exp;
 const { companyName, companyLocation, companyDescription, startDate, endDate, jobPosition } = data;
 
 const { Content } = await render(exp);
+
+export const prerender = true;
 ---
 
 <MainLayout title={`Experiencia | ${companyName}`}>

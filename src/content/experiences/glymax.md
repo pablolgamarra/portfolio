@@ -3,6 +3,7 @@ companyName: "Glymax Paraguay S.A."
 companyLocation: "Ciudad del Este - Paraguay"
 companyDescription: "Glymax es una empresa del sector agrícola con fuerte presencia en la region este del Paraguay, con mas de siete sucursales distribuidas en toda la región."
 startDate: november-2023
+endDate:
 jobPosition: "Asistente de T.I"
 ---
 # Glymax Paraguay S.A

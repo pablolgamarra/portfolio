@@ -1,15 +1,14 @@
 ---
-
 name: "Implementación CRM CAST - Brumado"
+description: "Implementación del sistema CRM CAST en entorno corporativo para gestión comercial y seguimiento de clientes."
+---
+
 technologies:
 
 * CRM CAST
 * Infraestructura IT
 * Integración de sistemas
 * Soporte técnico
-  description: "Implementación del sistema CRM CAST en entorno corporativo para gestión comercial y seguimiento de clientes."
-
----
 
 # Implementación CRM CAST - Brumado
 
