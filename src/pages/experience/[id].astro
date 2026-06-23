@@ -1,0 +1,29 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+	const experiences = await getCollection('experiences');
+
+	return experiences.map((exp) => ({
+		params: { id: exp.id },
+		props: { exp },
+	}));
+}
+
+const { exp } = Astro.props;
+const { id, data } = exp;
+
+const { companyName, companyLocation, companyDescription, startDate, endDate, jobPosition } = data;
+
+const { Content } = await render(exp);
+---
+
+<MainLayout title={`Experiencia | ${companyName}`}>
+	<a
+		href='/experience'
+		slot='in-header'
+		>Volver atras</a
+	>
+	<Content slot='content' />
+</MainLayout>

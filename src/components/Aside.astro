@@ -1,0 +1,182 @@
+<aside class='gradient-border'>
+	<section class='aside-header'>
+		<img src='/assets/icons/memoji/dev.webp' />
+		<h1>Pablo Gamarra</h1>
+		<hr />
+		<p class='subtitle'>Ingeniero en Informática | Analista de TI Pleno</p>
+		<p>Ciudad del Este, Paraguay</p>
+		<a
+			href='https://py.linkedin.com/company/glymax-paraguay-s-a'
+			target='_blank'>
+			Glymax Paraguay S.A.
+			<img
+				src='/assets/icons/link-icon.svg'
+				alt='Icono de enlace'
+				class='icon'
+			/>
+		</a>
+	</section>
+	<section>
+		<h4 class='social-media-aside-section-title'>Redes Sociales</h4>
+		<ul>
+			<li class='expanded-li'>
+				<a
+					href='https://github.com/pablolgamarra'
+					class='expanded-content'
+					target='_blank'>
+					<img
+						src='/assets/icons/social-media/github-100.svg'
+						alt='Ícono de instagram'
+						style='color:white'
+					/>
+					<p>pablolgamarra</p>
+				</a>
+			</li>
+			<li class='expanded-li'>
+				<a
+					href='https://instagram.com/pablolgamarra'
+					class='expanded-content'
+					target='_blank'>
+					<img
+						src='/assets/icons/social-media/instagram-100.svg'
+						alt='Ícono de instagram'
+						style='color:white'
+					/>
+					<p>@pablolgamarra</p>
+				</a>
+			</li>
+			<li>
+				<a
+					href='https://www.linkedin.com/in/pablolgamarra'
+					class='expanded-content'
+					target='_blank'>
+					<img
+						src='/assets/icons/social-media/linkedin-100.svg'
+						alt='Ícono de linkedin'
+					/>
+					<p>/in/pablolgamarra</p>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h4 class='social-media-aside-section-title'>Correo de contacto</h4>
+		<ul>
+			<li class='expanded-li'>
+				<a
+					href='mailto:pablogamarra.dev@gmail.com'
+					class='expanded-content'
+					target='_blank'>
+					<img
+						src='/assets/icons/social-media/email-100.svg'
+						alt='Ícono de email'
+						style='color:white'
+					/>
+					<p>pablogamarra.dev@gmail.com</p>
+				</a>
+			</li>
+		</ul>
+	</section>
+</aside>
+
+<style>
+	aside {
+		background-color: var(--cffy-theme-surface-tonal-a10);
+		margin-top: 2rem;
+		max-width: 28%;
+		height: 580px;
+		padding: 15px;
+		border-radius: var(--br-corner-le);
+		box-sizing: border-box;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+
+	.aside-header {
+		display: flex;
+		flex-direction: column;
+
+		h1 {
+			font-size: var(--fs-title);
+			color: var(--cffy-theme-accent-a30);
+			align-self: flex-start;
+			margin-bottom: 0px;
+		}
+
+		.subtitle {
+			color: var(--cffy-theme-surface-tonal-a50);
+		}
+
+		p {
+			font-size: var(--fs-5);
+			align-self: flex-start;
+			margin-top: 0px;
+			margin-bottom: 5px;
+		}
+
+		img {
+			height: 200px;
+			width: 200px;
+			border: var(--border-solid-thin-1);
+			border-radius: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		a {
+			font-size: var(--fs-5);
+			margin-top: 0px;
+			margin-bottom: 10px;
+		}
+
+		.icon {
+			width: 15px;
+			height: 15px;
+			border: none;
+		}
+
+		hr {
+			width: 100%;
+			margin-top: 0px;
+			border-width: 1px;
+			border-color: var(--cffy-theme-surface-tonal-a60);
+		}
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+	}
+
+	.social-media-aside-section-title {
+		width: 100%;
+		font-size: var(--fs-4);
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+
+	.expanded-li {
+		display: flex;
+		margin-top: 0px;
+	}
+
+	.expanded-content {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		text-decoration: none;
+		p {
+			font-size: 0.85rem;
+			text-decoration: none;
+			margin: 0px 15px 0px 5px;
+		}
+	}
+</style>

@@ -1,28 +1,15 @@
 ---
-import Navbar from '../components/Navbar.astro';
-import '../styles/global.css';
+import MainLayout from '../layouts/MainLayout.astro';
 ---
 
-<html lang='es'>
-	<head>
-		<meta charset='utf-8' />
-		<meta
-			name='viewport'
-			content='width=device-width, initial-scale=1.0'
-		/>
-		<title>Portfolio Pablo Gamarra</title>
-	</head>
-	<body>
-		<Navbar />
-		<aside class='sidebar'>
-			<section class='sidebar-info'>
-				<h1>Pablo Gamarra</h1>
-				<p>@pablolgamarra</p>
-			</section>
-			<hr />
-			<p>Ingeniero en Informática</p>
-		</aside>
-
-		<p>Portfolio en construcción.</p>
-	</body>
-</html>
+<!-- Botones: Ver proyectos Descargar CV Contactar -->
+<MainLayout title='Sobre mí'>
+	<h2 slot='title'>Sobre mí</h2>
+	<p slot='content'>
+		Soy un profesional con más de 4 años de experiencia en el área de T.I., donde, si bien no he tenido un puesto
+		formal como programador, he desarrollado aplicaciones internas para todas las empresas en las que trabajé. Me
+		considero una persona autodidacta, apasionada por el aprendizaje continuo y actualmente estoy cursando el quinto
+		año de la carrera de Ingeniería en Informática. Además, cuento con experiencia en la configuración de equipos de
+		red como Mikrotik, Cisco y Firewalls Fortinet.
+	</p>
+</MainLayout>

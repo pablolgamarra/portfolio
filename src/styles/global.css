@@ -1,50 +1,69 @@
-/*
-VARS
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
 
-*/
 :root {
-	/**
-         * colors
-         */
+	/** Theme primary colors */
+	--cffy-theme-primary-a0: #880fa3;
+	--cffy-theme-primary-a10: #9535ad;
+	--cffy-theme-primary-a20: #a14fb7;
+	--cffy-theme-primary-a30: #ad66c1;
+	--cffy-theme-primary-a40: #b97dca;
+	--cffy-theme-primary-a50: #c592d4;
 
-	/* gradient */
+	/** Theme accent colors */
+	--cffy-theme-accent-a0: #1b8bbf;
+	--cffy-theme-accent-a10: #3e97c6;
+	--cffy-theme-accent-a20: #58a2cd;
+	--cffy-theme-accent-a30: #6eaed3;
+	--cffy-theme-accent-a40: #84b9da;
+	--cffy-theme-accent-a50: #99c5e0;
 
-	--bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
-	--bg-gradient-jet:
-		linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-	--bg-gradient-yellow-1: linear-gradient(to bottom right, hsl(45, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%);
-	--bg-gradient-yellow-2:
-		linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
-	--border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
-	--text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+	/** Theme surface colors */
+	--cffy-theme-surface-a0: #121212;
+	--cffy-theme-surface-a10: #252525;
+	--cffy-theme-surface-a20: #393939;
+	--cffy-theme-surface-a30: #4f4f4f;
+	--cffy-theme-surface-a40: #666;
+	--cffy-theme-surface-a50: #7d7d7d;
 
-	/* solid */
+	/** Theme tonal surface colors */
+	--cffy-theme-surface-tonal-a0: #1d151f;
+	--cffy-theme-surface-tonal-a10: #302832;
+	--cffy-theme-surface-tonal-a20: #443c45;
+	--cffy-theme-surface-tonal-a30: #58525a;
+	--cffy-theme-surface-tonal-a40: #6e6870;
+	--cffy-theme-surface-tonal-a50: #858086;
+	--cffy-theme-surface-tonal-a60: #b4aeb6;
+	--cffy-theme-surface-tonal-a70: #ddd4df;
 
-	--jet: hsl(0, 0%, 22%);
-	--onyx: hsl(240, 1%, 17%);
-	--black-1: hsl(240, 2%, 13%);
-	--black-2: hsl(240, 2%, 12%);
-	--black-3: hsla(240, 1%, 17%, 0.75);
-	--smoky-black: hsl(0, 0%, 7%);
-	--white-1: hsl(0, 0%, 100%);
-	--white-2: hsl(0, 0%, 98%);
-	--orange-yellow-crayola: hsl(45, 100%, 72%);
-	--vegas-gold: hsl(45, 54%, 58%);
-	--light-gray: hsl(0, 0%, 84%);
-	--light-gray-70: hsla(0, 0%, 84%, 0.7);
-	--bittersweet-shimmer: hsl(0, 43%, 51%);
+	/** Success colors */
+	--cffy-theme-success-a0: #7dff95;
+	--cffy-theme-success-a10: #9dffac;
+	--cffy-theme-success-a20: #b8ffc1;
 
-	/**
-         * typography
-         */
+	/** Warning colors */
+	--cffy-theme-warning-a0: #ffbc5e;
+	--cffy-theme-warning-a10: #ffca83;
+	--cffy-theme-warning-a20: #ffd8a4;
+
+	/** Danger colors */
+	--cffy-theme-danger-a0: #ff8080;
+	--cffy-theme-danger-a10: #ff9b99;
+	--cffy-theme-danger-a20: #ffb5b2;
+
+	/** Info colors */
+	--cffy-theme-info-a0: #87d1ff;
+	--cffy-theme-info-a10: #a1dbff;
+	--cffy-theme-info-a20: #b9e4ff;
 
 	/* font-family */
+	--ff-asap: 'Asap', Geneva, Verdana, sans-serif;
 	--ff-poppins: 'Poppins', sans-serif;
 
 	/* font-size */
-	--fs-1: 24px;
-	--fs-2: 18px;
-	--fs-3: 17px;
+	--fs-title: 38px;
+	--fs-1: 30px;
+	--fs-2: 24px;
+	--fs-3: 18px;
 	--fs-4: 16px;
 	--fs-5: 15px;
 	--fs-6: 14px;
@@ -57,78 +76,18 @@ VARS
 	--fw-500: 500;
 	--fw-600: 600;
 
-	/**
-         * shadow
-         */
-
-	--shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-	--shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-	--shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-	--shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-	--shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
-
-	/**
-         * transition
-         */
-
-	--transition-1: 0.25s ease;
-	--transition-2: 0.5s ease-in-out;
-
-	/*BORDER RADIUS*/
 	--br-corner-tr: 0 15px 0 15px;
-}
+	--br-corner-tl: 15px 0 15px 0;
+	--br-corner-le: 15px 0 0 15px;
+	--br-corner-ri: 0 15px 15px 0;
+	--br-all: 15px;
 
-/**
-BACKGROUND
-**/
-body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: var(--smoky-black);
-}
+	/*BORDER*/
+	--border-solid-thin-1: 2px solid var(--cffy-theme-surface-tonal-a30);
 
-/**
-SIDEBAR
-*/
-.sidebar {
-	max-height: 180px;
-	margin-bottom: 30px;
-}
-
-.sidebar.active {
-	max-height: 584px;
-}
-
-.sidebar-info {
-	gap: 25px;
-}
-
-/*
-RESPONSIVE
-*/
-
-@media (min-width: 1250px) {
-	body::-webkit-scrollbar {
-		width: 20px;
-	}
-
-	body::-webkit-scrollbar-track {
-		background: var(--smoky-black);
-	}
-
-	body::-webkit-scrollbar-thumb {
-		border: 5px solid var(--smoky-black);
-		background: hsla(0, 0%, 100%, 0.1);
-		border-radius: 20px;
-		box-shadow:
-			inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
-			inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
-	}
-
-	body::-webkit-scrollbar-thumb:hover {
-		background: hsla(0, 0%, 100%, 0.15);
-	}
-
-	body::-webkit-scrollbar-button {
-		height: 60px;
-	}
+	font-family: var(--ff-asap);
+	font-family: var(--ff-asap);
+	background: var(--cffy-theme-surface-tonal-a0);
+	color: var(--cffy-theme-surface-tonal-a70);
+	font-size: var(--fs-5);
 }

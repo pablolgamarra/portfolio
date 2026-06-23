@@ -1,0 +1,87 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Navbar from '../components/Navbar.astro';
+import Aside from '../components/Aside.astro';
+import '../styles/global.css';
+
+const { title } = Astro.props;
+---
+
+<html
+	lang='es'
+	transition:animate='initial'>
+	<head>
+		<meta charset='utf-8' />
+		<meta
+			name='viewport'
+			content='width=device-width, initial-scale=1.0'
+		/>
+		<title>{title}</title>
+		<ClientRouter />
+	</head>
+	<body>
+		<Aside />
+		<main>
+			<Navbar />
+			<section>
+				<header class='section-header'>
+					<slot name='title' />
+					<hr />
+				</header>
+				<div class='content'>
+					<slot name='content' />
+				</div>
+				<footer>
+					<slot
+						name='in-footer'
+						class='footer'
+					/>
+				</footer>
+			</section>
+		</main>
+		<style>
+			body {
+				display: flex;
+				justify-content: space-between;
+				position: relative;
+				width: 80%;
+				margin: auto;
+			}
+
+			main {
+				display: flex;
+				flex-direction: column;
+				background-color: var(--cffy-theme-surface-tonal-a10);
+				margin-top: 2rem;
+				width: 70%;
+				border-radius: var(--br-corner-ri);
+			}
+
+			section {
+				margin-top: 10px;
+				padding: 0 30px;
+
+				.section-header {
+					color: var(--cffy-theme-primary-a20);
+
+					h1,
+					h2,
+					h3 {
+						font-size: var(--fs-1);
+						margin: 0;
+						padding: 0;
+					}
+
+					hr {
+						border: 1px solid var(--cffy-theme-surface-tonal-a30);
+						margin-top: 0px;
+					}
+				}
+
+				.content {
+					margin-top: 20px;
+				}
+			}
+		</style>
+	</body>
+</html>

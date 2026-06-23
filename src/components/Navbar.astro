@@ -1,26 +1,27 @@
 <navbar>
 	<ul>
 		<li>
-			<a class='nav-link'>Experiencia Laboral</a>
+			<a
+				class='nav-link'
+				href='/'
+				>Inicio</a
+			>
 		</li>
 		<li>
-			<a class='nav-link'>Portafolio</a>
-		</li>
-		<li>
-			<a class='nav-link'>Devlog</a>
-		</li>
-		<li>
-			<a class='nav-link'>Contacto</a>
+			<a
+				class='nav-link'
+				href='/experience'
+				>Experiencia Laboral</a
+			>
 		</li>
 	</ul>
 </navbar>
 
 <style>
 	navbar {
-		position: fixed;
-		top: 0;
-		right: 0;
-		background-color: var(--black-3);
+		display: flex;
+		align-self: flex-end;
+		background-color: var(--cffy-theme-surface-tonal-a20);
 		border-radius: var(--br-corner-tr);
 	}
 
@@ -29,17 +30,18 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-        width: fit-content
+		width: fit-content;
 		padding: 0 10px;
+		list-style: none;
 	}
 
 	.nav-link {
 		color: var(--white-2);
 		text-decoration: none;
-        margin: 0 25px;
+		margin: 0 25px;
 	}
 
-    .nav-link:hover{
-        color: var(--vegas-gold);
-    }
+	.nav-link:hover {
+		color: var(--cffy-theme-primary-a50);
+	}
 </style>

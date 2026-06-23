@@ -1,24 +1,74 @@
 ---
+import MainLayout from '../layouts/MainLayout.astro';
+import { getCollection } from 'astro:content';
 
+const experiences = await getCollection('experiences');
 ---
 
-<html lang='es'>
-	<head>
-		<meta charset='UTF-8' />
-		<meta
-			name='viewport'
-			content='width=device-width, initial-scale=1.0'
-		/>
-		<title>Experiencia | Pablo Gamarra</title>
-	</head>
-	<body>
-		<main>
-			<section>
-				<article>
-					<header></header>
-				</article>
-			</section>
-		</main>
-		<footer></footer>
-	</body>
-</html>
+<MainLayout title='Experiencia'>
+	<h2 slot='title'>Experiencia Laboral</h2>
+	<ul slot='content'>
+		{
+			experiences
+				.sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf())
+				.map((experience) => {
+					const { id, data } = experience;
+
+					return (
+						<li>
+							<a href={`/experience/${id}`}>
+								<h3>{data.companyName}</h3>
+								<p>
+									{String(data.startDate.getMonth()) + '/' + String(data.startDate.getFullYear())} -{' '}
+									{data.endDate.valueOf() != 0
+										? String(data.endDate.getMonth()) + '/' + String(data.endDate.getFullYear())
+										: 'Actualidad'}
+								</p>
+							</a>
+							<p>{data.jobPosition}</p>
+						</li>
+					);
+				})
+		}
+	</ul>
+	<style>
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style: none;
+			text-decoration: none;
+		}
+
+		li:hover {
+			background-color: rgb(from var(--cffy-theme-primary-a50) r g b / 50%);
+		}
+		a {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			text-decoration: none;
+			color: var(--cffy-theme-accent-a50);
+			margin-bottom: 0px;
+
+			h3 {
+				margin: 0;
+			}
+
+			p {
+				margin: 0;
+				color: var(--cffy-theme-surface-tonal-a70);
+			}
+		}
+		hr {
+			border: 1px solid var(--cffy-theme-surface-tonal-a50);
+			margin-top: 0px;
+		}
+		p {
+			margin-top: 0;
+		}
+	</style>
+</MainLayout>
