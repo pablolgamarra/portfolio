@@ -15,7 +15,7 @@ const experiences = defineCollection({
 });
 
 const certificates = defineCollection({
-	loader: glob({ pattern: '**/*.md', base: './content/certificates' }),
+	loader: glob({ pattern: '**/*.md', base: './src/content/certificates' }),
 	schema: z.object({
 		topics: z.string().array(),
 		author: z.string(),
@@ -24,7 +24,7 @@ const certificates = defineCollection({
 });
 
 const projects = defineCollection({
-	loader: glob({ pattern: '**/*.md', base: './content/certificates' }),
+	loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
 });
 
 export const collections = { experiences, certificates, projects };
